@@ -38,6 +38,7 @@ var t = 0;
 var x = 0;
 var tx = 0;
 var ty = 0;
+
 // preload()
 //
 // Loads the target and decoy images before the program starts
@@ -121,6 +122,9 @@ function draw() {
   fill(0);
   rect(0,0,250,125);
   image(targetImage, 100, 60);
+  textSize(20);
+  fill(255);
+  text("Lost Dog", 100, 120);
 
   if (gameOver) {
     // Prepare our typography
